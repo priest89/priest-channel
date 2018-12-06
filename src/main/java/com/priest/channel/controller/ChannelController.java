@@ -16,6 +16,6 @@ public class ChannelController {
 
 	@GetMapping("/{channelId}")
 	public ChannelDto getChannel(Long channelId) {
-		return channelService.getChannel(channelId);
+		return channelService.getChannelException(channelId);
 	}
 }

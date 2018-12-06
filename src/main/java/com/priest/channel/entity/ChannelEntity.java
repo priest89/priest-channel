@@ -25,9 +25,28 @@ public class ChannelEntity implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	@Column(name = "channel_name")
-	private String channelName;
+	@Column(name = "title")
+	private String title;
+
+	@Column(name = "description")
+	private String description;
 
 	@Id
 	private Long id;
+
+	@Column(name = "channel_guid")
+	private String channelGuid;
+
+	@Column(name = "image_url")
+	private String imageUrl;
+
+	@Column(name = "status")
+	private String status;
+
+	@Column(name = "created_date")
+	private String createdDate;
+
+	@Column(name = "lastModified")
+	private String lastModified;
+
 }
